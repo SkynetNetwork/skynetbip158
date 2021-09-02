@@ -1,4 +1,4 @@
-# Chia BIP158
+# Skynet BIP158
 
 ![Build](https://github.com/Chia-Network/chiabip158/workflows/Build/badge.svg)
 ![PyPI](https://img.shields.io/pypi/v/chiabip158?logo=pypi)
