@@ -24,7 +24,7 @@ class get_pybind_include(object):
 
 ext_modules = [
     Extension(
-        "chiabip158",
+        "skynetbip158",
         [
             "src/blockfilter.cpp",
             "src/crypto/sha256.cpp",
@@ -36,7 +36,7 @@ ext_modules = [
             "src/util/bytevectorhash.cpp",
             "src/uint256.cpp",
             "python-bindings/PyBIP158.cpp",
-            "python-bindings/chiabip158.cpp",
+            "python-bindings/skynetbip158.cpp",
         ],
         include_dirs=[
             # Path to pybind11 headers
@@ -117,16 +117,16 @@ class BuildExt(build_ext):
 
 
 setup(
-    name="chiabip158",
+    name="skynetbip158",
     author="Mariano Sorgente",
     author_email="mariano@chia.net",
-    description="Chia BIP158 (wraps C++)",
+    description="Skynet BIP158 (wraps C++)",
     license="Apache License",
     python_requires=">=3.7",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     setup_requires=["pybind11>=2.5.0"],
-    url="https://github.com/Chia-Network/chiabip158",
+    url="https://github.com/SkynetNetwork/skynetbip158",
     ext_modules=ext_modules,
     cmdclass={"build_ext": BuildExt},
     zip_safe=False,

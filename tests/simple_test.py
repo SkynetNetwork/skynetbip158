@@ -1,4 +1,4 @@
-from chiabip158 import PyBIP158
+from skynetbip158 import PyBIP158
 from hashlib import sha256
 import random
 
